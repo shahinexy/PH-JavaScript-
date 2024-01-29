@@ -75,3 +75,55 @@ else if(score >=60 && score <= 69){
 else if(score >=0 && score <= 59){
     console.log('You got F');
 }
+
+/***
+
+if you get more then 80 then inside your friend score. 
+    If your friend get more than 80. then go for a lunch. 
+    if your friend get below 80 but greater than or equal 60 then tell your friend, good luck next time. 
+    if your friend get less than 60 but more than or equal to 40 then, keep your friend's message unseen.
+    if your friend get less than 40, block your friend
+if you get less than 80 go to home and sleep and act sad
+
+Note: 
+use nested if-else-if-else
+*/
+
+const myScore = 60;
+if(myScore >= 80){
+    console.log('Then go fore a lunch');
+}
+else if (myScore >= 60 && myScore <80){
+    console.log('Good luck next time');
+}
+else if (myScore >= 40 && myScore <60){
+    console.log('Keep your friends message unseen');
+}
+else if (myScore < 40){
+    console.log('Block your friend');
+}
+
+
+
+/***
+ * 
+
+you have two numbers in two variables, called: num1, num2
+
+now declare a variable called result. 
+if num1 is bigger than num2 then result will be double of num1. if not, then the value of the variable result will be the sum of num1 and num2.
+
+write a simple if-else. 
+
+also, write it using ternary operator.
+
+ */
+
+/***
+
+Ticket fare Calculator
+    - Children (age < 10): free
+    - Students get a 50% discount
+    - Senior citizens (age >= 60) gets a 15% Discount
+    - Otherwise Regular ticket fare 800 tk
+*/
