@@ -89,19 +89,26 @@ Note:
 use nested if-else-if-else
 */
 
-const myScore = 60;
+const myScore = 80;
+const myFriendScore = 60;
 if(myScore >= 80){
-    console.log('Then go fore a lunch');
+    if(myFriendScore >= 80){
+        console.log('Then go fore a lunch');
+    }
+    else if (myFriendScore >= 60 && myFriendScore <80){
+        console.log('Good luck next time');
+    }
+    else if (myFriendScore >= 40 && myFriendScore <60){
+        console.log('Keep your friends message unseen');
+    }
+    else if (myFriendScore < 40){
+        console.log('Block your friend');
+    }
 }
-else if (myScore >= 60 && myScore <80){
-    console.log('Good luck next time');
+else{
+    console.log('Going to home and sleep and act sad');
 }
-else if (myScore >= 40 && myScore <60){
-    console.log('Keep your friends message unseen');
-}
-else if (myScore < 40){
-    console.log('Block your friend');
-}
+
 
 
 
@@ -119,6 +126,13 @@ also, write it using ternary operator.
 
  */
 
+const num1 = 30;
+const num2 = 20;
+const tearnaryResult = num1 > num2 ? num1 *2 : num1 + num2;
+console.log(tearnaryResult);
+
+
+
 /***
 
 Ticket fare Calculator
@@ -127,3 +141,25 @@ Ticket fare Calculator
     - Senior citizens (age >= 60) gets a 15% Discount
     - Otherwise Regular ticket fare 800 tk
 */
+
+const age = 20;
+const student = false;
+const  price = 800;
+if(age < 10){
+    console.log('Free Calculator');
+}
+else if(student){
+    // 50% discount 
+    const discount = price * (50/100);
+    const payAmount = price - discount;
+    console.log('You have to pay:', payAmount);
+}
+else if( age >= 60){
+    // 15% discount 
+    const discount = price * (15/100);
+    const payAmount = price - discount;
+    console.log('You have to pay:', payAmount);
+}
+else{
+    console.log('You have to pay 800tk');
+}
