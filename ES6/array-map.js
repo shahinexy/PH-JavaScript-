@@ -1,4 +1,5 @@
 // ================================ by rahat vai ===================
+// map return a new array
 // map can return and console.log 
 const myarray = [23,43,56,12,65,67];
 const result = myarray.map((number,index,array) => {
